@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="rollTheDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="whiteBox" colorLabel="IBBuiltInLabel-Gray">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperclip" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vYq-vX-Vd1">
+                                <rect key="frame" x="107" y="59.5" width="200" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="81e-ae-Buu"/>
+                                    <constraint firstAttribute="height" constant="50" id="osS-5L-YfL"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apP-MG-HMb">
+                                <rect key="frame" x="16" y="807" width="382" height="31"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="tintColor" systemColor="linkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Roll!"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y80-EH-K5A" userLabel="greenBox" colorLabel="IBBuiltInLabel-Green">
+                                <rect key="frame" x="24" y="389" width="366" height="118"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7k8-sq-pqK" userLabel="redBox" colorLabel="IBBuiltInLabel-Red">
+                                        <rect key="frame" x="90" y="8" width="186" height="102"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Agp-uS-urF">
+                                                <rect key="frame" x="8" y="16.5" width="70" height="69.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="jVy-PJ-vgt"/>
+                                                    <constraint firstAttribute="width" constant="70" id="tSH-2R-kGf"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uug-r4-sIf">
+                                                <rect key="frame" x="108" y="16.5" width="70" height="69.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="DgE-ws-41K"/>
+                                                    <constraint firstAttribute="width" constant="70" id="Sy5-bE-Cf9"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Agp-uS-urF" firstAttribute="centerY" secondItem="7k8-sq-pqK" secondAttribute="centerY" id="3c2-JB-Fzj"/>
+                                            <constraint firstItem="uug-r4-sIf" firstAttribute="leading" secondItem="Agp-uS-urF" secondAttribute="trailing" constant="30" id="7db-yD-bDt"/>
+                                            <constraint firstAttribute="bottom" secondItem="Agp-uS-urF" secondAttribute="bottom" constant="16" id="Bn3-vM-2z8"/>
+                                            <constraint firstItem="uug-r4-sIf" firstAttribute="centerY" secondItem="7k8-sq-pqK" secondAttribute="centerY" id="Elr-w0-ZOc"/>
+                                            <constraint firstAttribute="trailing" secondItem="uug-r4-sIf" secondAttribute="trailing" constant="8" id="Np4-eP-qpn"/>
+                                            <constraint firstItem="Agp-uS-urF" firstAttribute="leading" secondItem="7k8-sq-pqK" secondAttribute="leading" constant="8" id="SFG-US-cxy"/>
+                                            <constraint firstItem="Agp-uS-urF" firstAttribute="top" secondItem="7k8-sq-pqK" secondAttribute="top" constant="16" id="giH-zS-qRL"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="7k8-sq-pqK" secondAttribute="bottom" constant="8" id="1vZ-3g-DGc"/>
+                                    <constraint firstItem="7k8-sq-pqK" firstAttribute="centerX" secondItem="Y80-EH-K5A" secondAttribute="centerX" id="IdM-X0-5ds"/>
+                                    <constraint firstItem="7k8-sq-pqK" firstAttribute="top" secondItem="Y80-EH-K5A" secondAttribute="top" constant="8" id="cl9-05-Fb2"/>
+                                    <constraint firstItem="7k8-sq-pqK" firstAttribute="centerY" secondItem="Y80-EH-K5A" secondAttribute="centerY" id="pl1-ZM-bap"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="apP-MG-HMb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4Sj-BU-KF9"/>
+                            <constraint firstItem="vYq-vX-Vd1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="6t2-kv-xyP"/>
+                            <constraint firstItem="vYq-vX-Vd1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FwB-O9-WIy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y80-EH-K5A" secondAttribute="trailing" constant="24" id="QdK-84-QN6"/>
+                            <constraint firstItem="Y80-EH-K5A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="kYS-fO-3fL"/>
+                            <constraint firstItem="Y80-EH-K5A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mjd-cE-luM"/>
+                            <constraint firstItem="apP-MG-HMb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nHr-un-hOZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="apP-MG-HMb" secondAttribute="bottom" constant="24" id="q9H-fP-y5R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="apP-MG-HMb" secondAttribute="trailing" constant="16" id="ylY-9z-acm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rollButton" destination="apP-MG-HMb" id="GUg-8Z-MPw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dice" catalog="system" width="128" height="113"/>
+        <image name="paperclip" catalog="system" width="121" height="128"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
